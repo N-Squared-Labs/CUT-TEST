@@ -11,6 +11,7 @@ mkdir -p .fake_home
 docker run -it --rm \
     --gpus '"device='$GPU'"' \
     --name 'cuttest' \
+    --mount type=bind,source="/mnt/workspace/datasets/CUT_Eval",target=/app \
     --hostname $(hostname) \
     -u $(id -u):$(id -g) \
     -e HOME \

@@ -151,3 +151,8 @@ ls
 exit
 python train.py --dataroot ./datasets/grass2trees --name grass2trees_CUT --CUT_mode CUT --display_id 0
 nohup python train.py --dataroot ./datasets/grass2trees --name grass2trees_CUT --CUT_mode CUT --display_id 0
+cd /app
+ls
+cd ..
+ls
+exit
